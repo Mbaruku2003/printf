@@ -7,13 +7,13 @@
  */
 int _printf(const char *format, ...)
 {
-	int count = 0, char_print = 0;
-
-
+	int count = 0;
 	va_list folder;
 
-	if (format == NULL);
+	if (format == NULL || format[0] == '\0')
+	{
 	return (-1);
+	}
 	va_start(folder, format);
 
 	while (*format)
@@ -30,20 +30,27 @@ int _printf(const char *format, ...)
 			else if(*format == 'c')
 			{
 				char letter = va_arg(folder, int);
-				write(1, &letter, 1);
+				write (1, &letter, 1);
 			}
 			else if (*format == 's')
 			{
-				char *str = va_arg(folder,char *);
-				if(str == NULL)
+				char *str = va_arg(folder, char *);
+				if (str == NULL)
 				{
-					write(1, "NULL", 1);
+					write(1, "NULL", 6);
+					count++;
 				}
 			}
+			else if (*format == '%')
+			{
+				write (1, format, 1);
+				count++;
+			}
+
 		}
 		format++;
 }
 printf("\n");
 va_end(folder);
+return (*format);
 }
-
