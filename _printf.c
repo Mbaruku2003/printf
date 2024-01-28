@@ -15,7 +15,6 @@ int _printf(const char *format, ...)
 	return (-1);
 	}
 	va_start(folder, format);
-
 	while (*format)
 	{
 		if (*format != '%')
@@ -50,7 +49,6 @@ int _printf(const char *format, ...)
 		}
 		format++;
 }
-printf("\n");
 va_end(folder);
-return (*format);
+return (count);
 }
