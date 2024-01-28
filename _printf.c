@@ -36,7 +36,7 @@ int _printf(const char *format, ...)
 				char *str = va_arg(folder, char *);
 				if (str == NULL)
 				{
-					write(1, "NULL", 6);
+					write(1, "NULL", 5);
 					count++;
 				}
 			}
