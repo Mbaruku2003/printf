@@ -1,11 +1,11 @@
 #include "main.h"
 #include <unistd.h>
 /**
- * _printf - print character with %c
+ * s - print character with %c
  *@format: argument passed
  *Return: always 1
  */
-int _printf(const char *format, ...)
+int s(const char *format, ...)
 {
 	int count = 0;
 	int i;

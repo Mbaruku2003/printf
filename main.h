@@ -9,6 +9,8 @@
 
 int _printf(const char *format, ...);
 int _putchar(char c);
-int print_char(const char *wow, ...);
+int s(const char *format, ...);
+int r(const char *format, ...);
+int c(const char *format, ...);
 
 #endif

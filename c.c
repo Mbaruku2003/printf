@@ -2,11 +2,11 @@
 #include <unistd.h>
 
 /**
- * print_char - print character with %c
+ * c - print character with %c
  *@wow: argument passed
  *Return: always 1
  */
-int _printf(const char *format, ...)
+int c(const char *format, ...)
 {
 	int count = 0;
 	va_list folder;
