@@ -31,6 +31,7 @@ int r(const char *format, ...)
 			else if (*format == 'r')
 			{
 				char *str = va_arg(folder, char*);
+
 				for (i = 0; str[i] != '\0'; i++)
 				{
 					length++;

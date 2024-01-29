@@ -3,8 +3,8 @@
 
 /**
  * c - print character with %c
- *@wow: argument passed
- *Return: always 1
+ * @format: argument passed
+ * Return: always 1
  */
 int c(const char *format, ...)
 {
@@ -27,9 +27,10 @@ int c(const char *format, ...)
 			format++;
 			if (*format == '\0')
 				break;
-			else if (*format =='c')
+			else if (*format == 'c')
 			{
 				char letter = va_arg(folder, int);
+
 				write(1, &letter, 1);
 			}
 		}
