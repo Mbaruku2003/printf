@@ -38,7 +38,7 @@ int r(const char *format, ...)
 				}
 				for (i = length - 1; str[i] >= 0; i++)
 				{
-					write(1, str--, 1);
+					write(1, str, 1);
 					count++;
 				}
 			}

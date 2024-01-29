@@ -7,10 +7,11 @@
 #include <stdarg.h>
 #include <string.h>
 
-int _printf(const char *format, ...);
+int leo(const char *format, ...);
 int _putchar(char c);
 int s(const char *format, ...);
 int r(const char *format, ...);
 int c(const char *format, ...);
+int _printf(const char *format, ...);
 
 #endif
