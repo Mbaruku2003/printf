@@ -7,11 +7,9 @@
 #include <stdarg.h>
 #include <string.h>
 
-int leo(const char *format, ...);
-int _putchar(char c);
-int s(const char *format, ...);
-int r(const char *format, ...);
-int c(const char *format, ...);
+int _length_m(char *);
+int _mputchar(char mwrite);
 int _printf(const char *format, ...);
+int _stringcheck(char *sttp);
 
 #endif
